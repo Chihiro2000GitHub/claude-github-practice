@@ -13,3 +13,8 @@ site:
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
+
+toc:
+  - file: index.md
+  - file: lectures.md
+  - file: notes.md
