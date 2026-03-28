@@ -1,10 +1,5 @@
-# My Small Jupyter Book
+# Lectures and Resources I Want to Explore
 
-This is my first Jupyter Book practice project.
+This small Jupyter Book is part of my practice with Claude Code, GitHub, and Jupyter Book.
 
-## What I practiced
-
-- Installed Claude Code
-- Created and cloned a GitHub repository
-- Explored a public repository
-- Built my first Jupyter Book
+Here I collect a few lectures and resources that I want to explore further.
