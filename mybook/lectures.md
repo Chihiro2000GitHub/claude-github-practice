@@ -9,7 +9,7 @@ I am eager to deepen my understanding of computational methods in economics.
 
 ## Computational Psychiatry and Reinforcement Learning
 
-My research interests lie in computational psychiatry, reinforcement learning, and Bayesian inference — particularly the free energy principle and active inference.
+My research interests lie at the intersection of computational psychiatry and economics. Within computational psychiatry, I am especially drawn to reinforcement learning and Bayesian inference.
 
 - [Interview with Dr. Rick Adams (UCL) — a leading computational psychiatrist](https://www.youtube.com/watch?v=_zFpIxRIvT8&t=921s)
 
