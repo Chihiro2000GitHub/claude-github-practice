@@ -1,0 +1,56 @@
+name: Deploy mybook to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'mybook/**'
+      - '.github/workflows/deploy-book.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    env:
+      BASE_URL: /${{ github.event.repository.name }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install MyST
+        run: npm install -g mystmd
+
+      - name: Build site
+        working-directory: mybook
+        run: myst build --html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: mybook/_build/html
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
