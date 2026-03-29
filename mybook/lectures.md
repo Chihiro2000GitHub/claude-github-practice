@@ -5,7 +5,7 @@
 I am eager to deepen my understanding of computational methods in economics.
 
 - [QuantEcon website](https://quantecon.org/)
-    - [My favorite lecture](https://python.quantecon.org/mccall_q.html)
+    - [My favorite lecture on Search with Q-learning](https://python.quantecon.org/mccall_q.html)
 
 ## Computational Psychiatry and Reinforcement Learning
 
